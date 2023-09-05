@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Inova Reborn",
+    "type": "Car",
+    "fuel": "RON95"
+  },
+  {
+    "name": "Pajero Sport",
+    "type": "Car",
+    "fuel": "Solar"
+  }
+]

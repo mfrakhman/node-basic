@@ -1,9 +1,21 @@
-class CarController {
-    constructor(carService){
-        this.carService = new CarController();
-    }
+const CarService = require("../service/car.service");
 
-    getEngineStarted() {
-        this.carService.getEngineStarted();
-    }
+class CarController {
+  constructor() {
+    this.carService = new CarService();
+  }
+
+  getEngineStarted() {
+    this.carService.getEngineStarted();
+  }
+
+  async getAll() {
+    return await this.carService.getAll();
+  }
+
+  async store(body) {
+    await this.carService.store(body);
+  }
 }
+
+module.exports = CarController;
